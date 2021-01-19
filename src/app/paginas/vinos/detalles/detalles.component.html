@@ -1,0 +1,32 @@
+<div class="card border-light  mb-3" style="max-width: 30rem;">
+    <div class="card-header">
+        Información
+    </div>
+    <div class="card-body">
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            Clasificación: <h5>{{vinos.clasificacion}}</h5>
+        </li>
+        <li class="list-group-item">
+            Tipo: <h5>{{vinos.tipo}}</h5>
+        </li>
+        <li class="list-group-item">
+            Nombre: <h5>{{vinos.nombre}}</h5>
+        </li>
+        <li class="list-group-item">
+            Cosecha: <h5>{{vinos.cosecha}}</h5>
+        </li>
+        <li class="list-group-item">
+            Sabor: <h5>{{vinos.sabor}}</h5>
+        </li>
+        <li class="list-group-item">
+            Aroma: <h5>{{vinos.aroma}}</h5>
+        </li>
+        </ul>
+    </div>
+    <div class="btn-group " role="group">
+        <button type="button" class="btn btn-success disabled m-5" (click)="onGoToEditar()">Editar</button>
+        <button type="button" class="btn btn-danger  disabled m-5" (click)="onGoToEliminar()">Eliminar</button>
+    </div>
+</div>
+<button type="button" class="btn btn-primary mt-2" (click)="onGoRegresarLista()">Regresar</button>

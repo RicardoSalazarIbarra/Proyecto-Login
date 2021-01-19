@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-c8030": {
+      "hosting": {
+        "LoginFireBase": [
+          "login-c8030"
+        ]
+      }
+    }
+  }
+}

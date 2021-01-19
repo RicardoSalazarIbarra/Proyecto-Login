@@ -1,0 +1,30 @@
+<div class="table-responsive">
+    <table class="table table-hover mt-3">
+        <thead>
+        <tr>
+            <th scope="col">Clasificación</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Cosecha</th>
+            <th scope="col">Sabor</th>
+            <th scope="col">Aroma</th>
+            <th class="d-none d-sm-block" scope="col">Métodos</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr class="table-type" *ngFor="let item of vinos$ | async">
+            <th scope="row">{{ item.clasificacion}}</th>
+            <td>{{ item.tipo}}</td>
+            <td>{{ item.nombre}}</td>
+            <td>{{ item.cosecha}}</td>
+            <td>{{ item.sabor}}</td>
+            <td>{{ item.aroma}}</td>
+            <td class="bnt-group d-none d-sm-block" role="group">
+            <button type="button" class="btn btn-dark m-1" (click)="onGoToEditar(item)">Editar</button>
+            <button type="button" class="btn btn-dark m-1" (click)="onGoToVer(item)">Ver</button>
+            <button type="button" class="btn btn-danger m-1" (click)="onGoToEliminar(item.id)">Eliminar</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
